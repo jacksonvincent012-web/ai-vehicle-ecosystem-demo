@@ -9,6 +9,8 @@
 
 > An intelligent fleet management system that uses AI to optimize vehicle routing, negotiate intersections, manage fuel consumption, and prevent accidents — all in real-time with stunning 3D visualization.
 
+<img width="1868" height="768" alt="Screenshot 2026-06-13 191215" src="https://github.com/user-attachments/assets/a8be2e28-e005-4a18-a776-2a13333ece55" />
+
 ---
 
 ## 🌟 Features
@@ -233,6 +235,9 @@ Say any of these commands:
 | Interactivity | 9.5/10 |
 | Completeness | 9/10 |
 | Hackathon Impact | 10/10 |
+
+## 📄 License
+This project is licensed under the Apache License 2.0 — see the [LICENSE](LICENSE) file for details.
 
 ---
 
