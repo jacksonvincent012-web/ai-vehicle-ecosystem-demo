@@ -1,0 +1,568 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================
+   AI VEHICLE ECOSYSTEM - FUTURISTIC THEME
+   ============================================ */
+
+:root {
+  --color-primary: #00f0ff;
+  --color-success: #00ff88;
+  --color-warning: #ffaa00;
+  --color-danger: #ff3355;
+  --color-info: #7b61ff;
+  --color-bg-dark: #0a0a1a;
+  --color-bg-card: rgba(20, 20, 40, 0.8);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Rajdhani', sans-serif;
+  background: var(--color-bg-dark);
+  color: #e0e0e0;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a2e;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--color-primary), var(--color-info));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary);
+}
+
+/* Selection */
+::selection {
+  background: var(--color-primary);
+  color: #000;
+}
+
+/* Glassmorphism Cards */
+.glass-card {
+  background: rgba(20, 20, 40, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+}
+
+/* Neon Glow Effects */
+.neon-cyan {
+  box-shadow: 0 0 10px var(--color-primary),
+              0 0 20px var(--color-primary),
+              0 0 30px var(--color-primary);
+}
+
+.neon-green {
+  box-shadow: 0 0 10px var(--color-success),
+              0 0 20px var(--color-success);
+}
+
+.neon-red {
+  box-shadow: 0 0 10px var(--color-danger),
+              0 0 20px var(--color-danger);
+}
+
+.neon-purple {
+  box-shadow: 0 0 10px var(--color-info),
+              0 0 20px var(--color-info);
+}
+
+/* Text Glow */
+.text-glow-cyan {
+  text-shadow: 0 0 10px var(--color-primary),
+               0 0 20px var(--color-primary);
+}
+
+.text-glow-green {
+  text-shadow: 0 0 10px var(--color-success);
+}
+
+/* Animated Background Grid */
+.bg-grid {
+  background-image: 
+    linear-gradient(rgba(0, 240, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 240, 255, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+  animation: grid-move 20s linear infinite;
+}
+
+@keyframes grid-move {
+  0% { background-position: 0 0; }
+  100% { background-position: 50px 50px; }
+}
+
+/* Pulse Animation */
+@keyframes pulse-glow {
+  0%, 100% { opacity: 1; box-shadow: 0 0 10px var(--color-primary); }
+  50% { opacity: 0.7; box-shadow: 0 0 20px var(--color-primary), 0 0 30px var(--color-primary); }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Scanning Line */
+@keyframes scan {
+  0% { top: 0; opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { top: 100%; opacity: 1; }
+}
+
+.scan-line::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--color-primary), transparent);
+  animation: scan 3s linear infinite;
+}
+
+/* Floating Animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Data Stream Animation */
+@keyframes data-stream {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100%); }
+}
+
+.data-stream::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 50%;
+  background: linear-gradient(180deg, transparent, var(--color-primary), transparent);
+  animation: data-stream 2s linear infinite;
+}
+
+/* Gauge Animations */
+@keyframes gauge-fill {
+  from { stroke-dashoffset: 100; }
+  to { stroke-dashoffset: var(--gauge-value); }
+}
+
+/* Emergency Pulse */
+@keyframes emergency-pulse {
+  0%, 100% { 
+    box-shadow: 0 0 5px var(--color-danger);
+    border-color: var(--color-danger);
+  }
+  50% { 
+    box-shadow: 0 0 20px var(--color-danger), 0 0 40px var(--color-danger);
+    border-color: #ff6688;
+  }
+}
+
+.emergency-active {
+  animation: emergency-pulse 0.5s ease-in-out infinite;
+}
+
+/* Card Hover Effects */
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 40px rgba(0, 240, 255, 0.2);
+  border-color: var(--color-primary);
+}
+
+/* Button Styles */
+.btn-primary {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-info));
+  color: #000;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(0, 240, 255, 0.4);
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: var(--color-primary);
+}
+
+/* Progress Bars */
+.progress-bar {
+  height: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.5s ease;
+}
+
+.progress-bar-fill.fuel-high {
+  background: linear-gradient(90deg, var(--color-success), #50ff50);
+}
+
+.progress-bar-fill.fuel-medium {
+  background: linear-gradient(90deg, var(--color-warning), #ffcc00);
+}
+
+.progress-bar-fill.fuel-low {
+  background: linear-gradient(90deg, var(--color-danger), #ff6666);
+  animation: emergency-pulse 1s ease-in-out infinite;
+}
+
+/* Status Badges */
+.status-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.status-moving { background: rgba(0, 255, 136, 0.2); color: var(--color-success); }
+.status-stopped { background: rgba(128, 128, 128, 0.2); color: #888; }
+.status-negotiating { background: rgba(255, 170, 0, 0.2); color: var(--color-warning); }
+.status-refueling { background: rgba(255, 170, 0, 0.2); color: var(--color-warning); }
+.status-emergency { background: rgba(255, 51, 85, 0.2); color: var(--color-danger); animation: emergency-pulse 0.5s infinite; }
+.status-yielding { background: rgba(123, 97, 255, 0.2); color: var(--color-info); }
+
+/* Map Styles */
+.map-container {
+  position: relative;
+  background: radial-gradient(circle at center, #0d1117 0%, #0a0a1a 100%);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.map-container::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: 
+    linear-gradient(rgba(0, 240, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 240, 255, 0.02) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
+}
+
+/* Vehicle Markers */
+.vehicle-marker {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.vehicle-marker:hover {
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+.vehicle-marker.selected {
+  box-shadow: 0 0 0 4px var(--color-primary);
+}
+
+.vehicle-marker.emergency {
+  animation: emergency-pulse 0.5s ease-in-out infinite;
+}
+
+/* Fuel Station Markers */
+.station-marker {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background: var(--color-primary);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 15px var(--color-primary);
+}
+
+/* Hazard Markers */
+.hazard-marker {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  transform: translate(-50%, -50%);
+  animation: pulse-glow 1s ease-in-out infinite;
+}
+
+.hazard-critical {
+  background: rgba(255, 0, 0, 0.3);
+  border: 2px solid var(--color-danger);
+}
+
+.hazard-high {
+  background: rgba(255, 102, 0, 0.3);
+  border: 2px solid #ff6600;
+}
+
+.hazard-medium {
+  background: rgba(255, 170, 0, 0.3);
+  border: 2px solid var(--color-warning);
+}
+
+/* Tooltips */
+.tooltip {
+  position: absolute;
+  background: rgba(10, 10, 26, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--color-primary);
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-size: 12px;
+  white-space: nowrap;
+  z-index: 1000;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.tooltip.visible {
+  opacity: 1;
+}
+
+/* Charts */
+.chart-container {
+  background: rgba(20, 20, 40, 0.5);
+  border-radius: 12px;
+  padding: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Loading Spinner */
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(0, 240, 255, 0.2);
+  border-top-color: var(--color-primary);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Connection Status */
+.connection-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.connection-indicator.connected {
+  background: var(--color-success);
+  box-shadow: 0 0 10px var(--color-success);
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.connection-indicator.disconnected {
+  background: var(--color-danger);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .hide-on-tablet {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .hide-on-mobile {
+    display: none;
+  }
+  
+  body {
+    font-size: 14px;
+  }
+  
+  .glass-card {
+    border-radius: 12px;
+  }
+}
+
+/* Print Styles */
+@media print {
+  body {
+    background: white;
+    color: black;
+  }
+  
+  .no-print {
+    display: none;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Focus States */
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Custom Tailwind Extensions */
+@layer utilities {
+  .text-gradient-cyan {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-info));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .border-gradient {
+    border: 2px solid;
+    border-image: linear-gradient(135deg, var(--color-primary), var(--color-info)) 1;
+  }
+}
+
+/* Voice listening animation */
+@keyframes listening-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(255, 51, 85, 0.4); }
+  50% { box-shadow: 0 0 0 15px rgba(255, 51, 85, 0); }
+}
+
+.voice-listening {
+  animation: listening-pulse 1.5s ease-in-out infinite;
+}
+
+/* Holographic shimmer */
+@keyframes holographic {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.holographic-text {
+  background: linear-gradient(90deg, #00f0ff, #7b61ff, #ff3355, #00ff88, #00f0ff);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: holographic 4s linear infinite;
+}
+
+/* Glowing border animation */
+@keyframes border-glow {
+  0%, 100% { border-color: var(--color-primary); }
+  33% { border-color: var(--color-info); }
+  66% { border-color: var(--color-success); }
+}
+
+.border-glow {
+  animation: border-glow 4s ease-in-out infinite;
+}
+
+/* Range slider */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-track {
+  height: 4px;
+  background: #1a1a2e;
+  border-radius: 2px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  margin-top: -5px;
+  box-shadow: 0 0 8px var(--color-primary);
+}
+
+/* Canvas smoothing */
+canvas {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
