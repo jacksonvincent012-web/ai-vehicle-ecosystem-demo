@@ -1,4 +1,4 @@
-# 🚗 AI-Powered Self-Learning Vehicle Ecosystem v3.0
+#  AI-Powered Self-Learning Vehicle Ecosystem v3.0
 
 ### Predictive Negotiation & Fuel Management
 
@@ -13,30 +13,30 @@
 
 ---
 
-## 🌟 Features
+##  Features
 
 ### Core AI Systems
 | Feature | Description |
 |---------|-------------|
-| 🧠 **AI Engine** | Traffic prediction, hazard detection, fuel depletion forecasting |
-| 🤝 **V2V Negotiation** | Intersection, merge, emergency, fuel priority negotiations |
-| ⛽ **Fuel Optimizer** | Route-aware refueling strategy with station coordination |
-| 📊 **Self-Learning** | Model accuracy improves from ~65% to 99%+ over iterations |
-| 🚨 **Emergency Protocol** | Fleet-wide coordination when emergency vehicles dispatch |
+|  **AI Engine** | Traffic prediction, hazard detection, fuel depletion forecasting |
+|  **V2V Negotiation** | Intersection, merge, emergency, fuel priority negotiations |
+|  **Fuel Optimizer** | Route-aware refueling strategy with station coordination |
+|  **Self-Learning** | Model accuracy improves from ~65% to 99%+ over iterations |
+|  **Emergency Protocol** | Fleet-wide coordination when emergency vehicles dispatch |
 
 ### Advanced Features (v3.0)
 | Feature | Description |
 |---------|-------------|
-| 🗺️ **3D Map** | Three.js-powered 3D visualization with camera controls |
-| 🎤 **Voice Commands** | Web Speech API for hands-free operation |
-| 📊 **Live Charts** | Traffic congestion, fuel levels, learning curves via Chart.js |
-| 📥 **Data Export** | JSON and CSV export functionality |
-| ⏮️ **Historical Playback** | Record and replay simulation snapshots |
-| 📊 **AI vs No-AI Comparison** | Side-by-side metrics showing AI impact |
-| 🔐 **Authentication** | Login system with user roles |
-| 📱 **Mobile Responsive** | Full mobile support with vehicle selector |
-| 🌍 **CO₂ Tracking** | Real-time emissions monitoring and reduction |
-| ⌨️ **Keyboard Shortcuts** | Space, R, S, Esc, 1-5 for quick control |
+| **3D Map** | Three.js-powered 3D visualization with camera controls |
+|  **Voice Commands** | Web Speech API for hands-free operation |
+|  **Live Charts** | Traffic congestion, fuel levels, learning curves via Chart.js |
+|  **Data Export** | JSON and CSV export functionality |
+| **Historical Playback** | Record and replay simulation snapshots |
+|  **AI vs No-AI Comparison** | Side-by-side metrics showing AI impact |
+|  **Authentication** | Login system with user roles |
+|  **Mobile Responsive** | Full mobile support with vehicle selector |
+| **CO₂ Tracking** | Real-time emissions monitoring and reduction |
+|  **Keyboard Shortcuts** | Space, R, S, Esc, 1-5 for quick control |
 
 ### Fleet Vehicles (8 Units)
 | Vehicle | Type | Urgency | Initial Fuel |
@@ -51,15 +51,15 @@
 | 🚗 Golf Compact | Car | 1 | 80% |
 
 ### Demo Scenarios
-1. ⛽ **Fuel-Saving Arrival** — AI slows vehicle to arrive after congestion clears
-2. 📦 **Urgent Delivery** — Priority routing with fleet-wide yielding
-3. 🔀 **Intersection Negotiation** — 4 vehicles approach simultaneously
-4. 🌧️ **Slippery Road Alert** — Weather hazards on multiple segments
-5. 🚨 **Fleet Emergency** — Ambulance dispatch with cascade coordination
+1.  **Fuel-Saving Arrival** — AI slows vehicle to arrive after congestion clears
+2.  **Urgent Delivery** — Priority routing with fleet-wide yielding
+3.  **Intersection Negotiation** — 4 vehicles approach simultaneously
+4.  **Slippery Road Alert** — Weather hazards on multiple segments
+5.  **Fleet Emergency** — Ambulance dispatch with cascade coordination
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 ┌─────────────────────────────────────────────┐
@@ -81,7 +81,7 @@
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Layer | Technology |
 |-------|-----------|
@@ -97,7 +97,7 @@
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Frontend Only (Demo Mode)
 ```bash
@@ -161,7 +161,7 @@ Fleet Manager: fleet_manager / fleet123
 
 ---
 
-## ⌨️ Keyboard Shortcuts
+##  Keyboard Shortcuts
 
 | Key | Action |
 |-----|--------|
@@ -173,7 +173,7 @@ Fleet Manager: fleet_manager / fleet123
 
 ---
 
-## 🎤 Voice Commands
+##  Voice Commands
 
 Say any of these commands:
 - "Start simulation" / "Stop" / "Pause" / "Resume"
@@ -186,7 +186,7 @@ Say any of these commands:
 
 ---
 
-## 📊 Metrics Tracked
+##  Metrics Tracked
 
 - **Negotiations Completed** — Total V2V negotiations
 - **Accidents Prevented** — Collision avoidance events
@@ -199,7 +199,7 @@ Say any of these commands:
 
 ---
 
-## 📸 Dashboard Layout
+##  Dashboard Layout
 
 ```
 ┌─────────────────────────────────────────────┐
@@ -225,7 +225,7 @@ Say any of these commands:
 
 ---
 
-## 🏆 Rating: 9.5/10
+##  Rating: 9.5/10
 
 | Category | Score |
 |----------|-------|
@@ -236,10 +236,10 @@ Say any of these commands:
 | Completeness | 9/10 |
 | Hackathon Impact | 10/10 |
 
-## 📄 License
+##  License
 This project is licensed under the Apache License 2.0 — see the [LICENSE](LICENSE) file for details.
 
 
 ---
 
-*Built with ❤️ for hackathon excellence*
+*Built  for hackathon excellence*
