@@ -222,20 +222,6 @@ Say any of these commands:
 │          │  • Historical playback           │
 └──────────┴──────────────────────────────────┘
 ```
-
----
-
-##  Rating: 9.5/10
-
-| Category | Score |
-|----------|-------|
-| Visual Design | 9.5/10 |
-| Functionality | 9.5/10 |
-| Code Quality | 9/10 |
-| Interactivity | 9.5/10 |
-| Completeness | 9/10 |
-| Hackathon Impact | 10/10 |
-
 ##  License
 This project is licensed under the Apache License 2.0 — see the [LICENSE](LICENSE) file for details.
 
